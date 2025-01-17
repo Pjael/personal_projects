@@ -1,0 +1,66 @@
+@import url('https://fonts.google.com/specimen/Raleway?query=raleway'); /*imports font from the web*/
+
+@font-face { 
+    font-family: 'Booter - Zero Zero';
+    src: url(fonts/PlaywriteIN-Regular.ttf) format(tff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+* { /*will apply to all elements in the html*/
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body { /*removing default margins on the side top and down*/
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul { 
+    margin: 0;
+}
+
+.nav li { /*aline horizontali home, about and store on the nav bar*/
+    display: inline;
+}
+
+.nav a { /*style the links in the nav bar*/
+    display: inline-block;
+    padding: .5em; /*spaces the words*/
+    color: white;
+    text-decoration: none; /*removes the underline on the words*/
+}
+
+.main-nav { /*adds line under the nav bar and aligns it*/
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(138, 231, 138, 0.2);
+}
+
+.main-nav li { /*spaces the nav bar elements*/
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(138, 231, 138, 0.2);
+}
+
+.main-header {
+    /*background-color: rgba(0, 0, 0, .6);*/
+    background-image: url(images/home_background.png);
+    /*background-blend-mode: multiply;  blends back-image and back-color making my image too dark*/
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "fonts/PlaywriteIN-Regular";
+    font-weight: normal;
+    color: white;
+}
