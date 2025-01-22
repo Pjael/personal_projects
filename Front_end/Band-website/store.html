@@ -3,10 +3,11 @@
     <head> 
         <title>StringsAndHeart | Store</title>
         <meta name="description" contents="Recreating strings and hearts artist website">
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="main-nav nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="store.html">Store</a></li>
@@ -14,18 +15,16 @@
                 </ul>
             </nav>
             <hr>
-            <h1>Strings And Heart</h1>
+            <h1 class="band-name band-name-large">Strings And Heart</h1>
         </header>
-        <section>
-            <h2>ALBUMS</h2>
-            <div>
-                <div> 
-                    <b>Evergreen</b>
-                </div>
-                <img src="images/Evergreen-album.png">
-                <div>
-                    <span>59.99$</span>
-                    <button role="button">ADD TO CART</button>
+        <section class="container content-section">
+            <h2 class="section-header">ALBUMS</h2>
+            <div class="shop-item">
+                <span class="shop-item-title">Evergreen</span>
+                <img  class="shop-item-img" src="images/Evergreen-album.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">59.99$</span>
+                    <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
                 </div>
             </div>
             <div>
