@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1px;
+    font-family: Raleway;
+}
+
+.main-header {
+    width: 100%;
+}
+
+.main-nav {
+    background-color: black;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    unicode-bidi: isolate;
+}       
+.main-nav ul {
+    background: white;
+    text-decoration: none;
+}
+
+.main-nav-text-left {
+    color: white;
+}
+.main-nav-text-left:hover {
+    background: #cdfb7c;
+    text-decoration: none;
+}
+
+.main-nav-text-right:hover {
+    background: #cdfb7c;
+    text-decoration: none;
+}
+.main-nav li {
+    padding: 0 5%;
+}
+.nav li {
+    display: inline;
+}
+.nav ul {
+    margin: 0;
+}
+.nav a {
+    font-weight: normal;
+    display: inline-block;
+    padding: .5em;
+    color: #171c21;
+    text-decoration: none;
+}
+
+.img-info {
+    padding: 30px 30px 30px;
+    font-family: arial;
+    font-size: 30px;
+    color: #171c21;
+    line-height: 44px;
+}
+.img-p {
+    padding: 0px 30px 20px;
+    font-family: arial;
+    font-size: 16px;
+    color: #171c21;
+    line-height: 24px;
+}
+.img-profile {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+    border-radius: 50%;
+}
+
+.footer { /*footer color*/
+    padding: .25em 0;
+    background-color: #aa7cfb;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.footer-contact {
+    text-align: 0;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #cdfb7c;
+}
+.footer-nav {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.greetings {
+    font-family: Doto;
+    color: #aa7cfb;
+    text-align: center;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.greetings:hover {
+    background-color: #cdfb7c;
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
