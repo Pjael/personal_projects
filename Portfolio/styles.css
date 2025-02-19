@@ -106,16 +106,69 @@
 }
 
 .greetings {
-    font-family: Doto;
+    /*font-family: Doto;
     color: #aa7cfb;
     text-align: center;
     font-weight: bold;
-    unicode-bidi: isolate;
+    unicode-bidi: isolate;*/
+
+    text-align: center;
+
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1px #aa7cfb;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 1.2em;
 }
 .greetings:hover {
     background-color: #cdfb7c;
+
+    -webkit-text-stroke: 1px #aa7cfb;
+    transition: 0.5s;
+}
+/*.greetings:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}*/
+
+
+.contact-link { /*styling contact link buttons*/
+    display: block;
+    border: 1px solid ;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 150%;
+    color: #171c21;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+    &:hover {
+        color: #aa7cfb;
+        background-color: #171c21;
+    }
+}
+.awesome { /*contact button animation*/
+    border-color: #171c21;
+    color: #aa7cfb;
+    background: {
+        image: linear-gradient(45deg,#171c21 50%,transparent 50%);
+        position: 100%;
+        size: 40%;
+    }
+    transition: background 500ms ease-in-out;
+    &:hover {
+        background-position: 0;
+    }
 }
 
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (max-width: 1210px) { /*resizing contact buttons for large screen*/
+    .contact-link {
+        margin: 10px auto;
+    }
+}
+@media screen and(max-width: 768px) {
+
 }
