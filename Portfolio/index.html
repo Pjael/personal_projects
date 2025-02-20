@@ -6,10 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="My protfolio website version 1.0">
         <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="main.js" defer></script>
     </head>
 
-    <body>
-        <header class="main-header"> <!--header contains links to navigate the different pages-->
+    <body class="normal-mode"><!--was supposed to have a light mode dark mode button but does't work and i don't know why-->
+        <header class="main-header"> <!--header contains links to navigate the different pages + light and dark mode button-->
+            <button id="theme-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"></path></svg>
+            </button>
             <nav class="nav main-nav">
                 <p><a class="main-nav-text-left"></a></p> <!-- for style purposes adds black band at the top-->
                 <ul>
@@ -24,18 +29,17 @@
             <img class="img-profile" src="images/profile2-img.jpg" alt="Jael's profile picture">
             <h1 class="img-info">I am P. Jael Savadogo</h1>
             <p class="img-p">Sofware engineering student <a href="https://www.alueducation.com/" target="_blank">@ALU</a>.</p>
-            <!--<button>View my CV</button>-->
         </div>
     </body>
     <footer class="footer">
         <div class="container main-footer-container">
             <h3 class="footer-contact">Welcome to My Portfolio &#128512;</h3>
-            <ul class="nav footer-nav">
-                <!--<li>
+            <!--<ul class="nav footer-nav">
+                <li>
                     <a href="www.linkedin.com/in/pegdwende-jaël-savadogo-999a7a2b3"></a> 
                     <img src="images/linkedin-logo.png" with="50px" height="50p">
-                </li>-->
-            </ul>
+                </li>
+            </ul>-->
         </div>
     </footer>
 </html> 
